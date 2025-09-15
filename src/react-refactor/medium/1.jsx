@@ -3,13 +3,9 @@ import sendMetric from "metrics";
 import sendData from "data";
 import bigComputations from "bigComputations";
 
-
- 
 /*
  Проведи рефакторинг, найди возможные ошибки в коде
 */
-
-
 
 export const RefactorMe = (props) => {
   const [data, setDate] = useState(bigComputations(props.argument));
