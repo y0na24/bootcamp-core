@@ -4,6 +4,8 @@
 2. doneAll — финальный колбэк, который должен быть вызван после завершения всех функций из funcArray. В этот колбэк необходимо передать массив результатов в том же порядке, в котором функции были переданы в funcArray
 */
 
+function parallel(funcArray, doneAll) {}
+
 function a(done) {
   setTimeout(function () {
     done("result a");
@@ -20,5 +22,3 @@ const funcArray = [a, b];
 parallel(funcArray, (result) => {
   result.forEach((v) => console.log(v));
 });
-
-function parallel(funcArray, doneAll) {}

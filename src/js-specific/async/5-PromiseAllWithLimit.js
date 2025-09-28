@@ -8,7 +8,7 @@ limit — число, обозначающее максимальное коли
 Реджектится, если любой из промисов отклоняется — с тем же значением ошибки, без продолжения выполнения остальных задач.
 */
 
-function promiseAllWithLimit(promises, limit) {}
+function promiseAllWithLimit(tasks, limit) {}
 
 function sleep(value, delay) {
   return new Promise((res) => setTimeout(() => res(value), delay));
